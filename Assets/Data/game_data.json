@@ -1,0 +1,31 @@
+{
+    "gameTitle": "Super Anter",
+    "buildOrder": [
+        "MainMenu",
+        "Level1",
+        "Level2",
+        "Level3"
+    ],
+    "score": {
+        "coinValue": 1,
+        "startingScore": 0
+    },
+    "player": {
+        "moveSpeed": 8.0,
+        "acceleration": 70.0,
+        "deceleration": 90.0,
+        "jumpForce": 15.0,
+        "coyoteTime": 0.11999999731779099,
+        "jumpBufferTime": 0.11999999731779099
+    },
+    "enemy": {
+        "moveSpeed": 2.0,
+        "waitAtWaypoint": 0.3499999940395355
+    },
+    "audio": {
+        "musicVolume": 0.41999998688697817,
+        "sfxVolume": 1.0,
+        "jumpPitchMin": 0.9399999976158142,
+        "jumpPitchMax": 1.059999942779541
+    }
+}

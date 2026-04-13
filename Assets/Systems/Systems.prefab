@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &493739171126318096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476684453683545596}
+  - component: {fileID: 9018219627831600088}
+  - component: {fileID: 7314802004295364931}
+  - component: {fileID: 1766498296086722940}
+  - component: {fileID: 3802282396875524419}
+  m_Layer: 0
+  m_Name: Systems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476684453683545596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493739171126318096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9018219627831600088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493739171126318096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef6524271c38c8478a494ed2112dc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  levelCatalog: {fileID: 11400000, guid: bbbdaa81d427d3d4fa8ff79d168f025a, type: 2}
+  mainMenuBuildIndex: 0
+  firstLevelBuildIndex: 1
+  lastLevelBuildIndex: 2
+  sceneFadeDuration: 0.25
+  hitStopDuration: 0.1
+  deathSlowMoScale: 0.5
+  deathSlowMoDuration: 0.2
+  restartDelay: 1
+  deathPitchMultiplier: 0.8
+  deathShakeForce: 1.1
+  startingLives: 3
+  maxLives: 99
+  coinsFor1UP: 100
+  startingScore: 0
+  gameData: {fileID: 11400000, guid: 194c0ec697e431e4991d2c2b208b7a50, type: 2}
+  levelTimeLimit: 300
+  timeWarningThreshold: 60
+  timeUpScorePerSecond: 50
+  cameraImpulseEmitter: {fileID: 0}
+  fallbackCameraShake: {fileID: 0}
+  comboResetTime: 1.5
+--- !u!114 &7314802004295364931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493739171126318096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb59058db20a284d858fc5d83520a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  mixer: {fileID: 0}
+  musicVolumeParameter: MusicVolume
+  sfxVolumeParameter: SfxVolume
+  musicMixerGroup: {fileID: 0}
+  sfxMixerGroup: {fileID: 0}
+  gameData: {fileID: 11400000, guid: 194c0ec697e431e4991d2c2b208b7a50, type: 2}
+  backgroundMusic: {fileID: 8300000, guid: e7a8f3c214d54789b0e1f2a3c4d5e6f7, type: 3}
+  starMusic: {fileID: 8300000, guid: b0304182a9110424ba8346e54b544c2b, type: 3}
+  musicVolume: 0.42
+  jumpClip: {fileID: 8300000, guid: 5f2e39a753f109641be03a4bb11390e5, type: 3}
+  coinClip: {fileID: 8300000, guid: 50097b161718b8749b9c40e5e60b6ef0, type: 3}
+  buttonClickClip: {fileID: 8300000, guid: 57df68c30d48398428a5b3e3b359d98c, type: 3}
+  deathClip: {fileID: 8300000, guid: 5c2a0e833bf54ea49869504ddeb5d62b, type: 3}
+  stompClip: {fileID: 8300000, guid: f6549871f8487cb4cb854d0bbb2a2d49, type: 3}
+  kickClip: {fileID: 8300000, guid: 9c575eaf7aeeff4428b7121ba5e3abc8, type: 3}
+  powerUpClip: {fileID: 8300000, guid: 4edd24425e09bbd419ec1d8e25337d84, type: 3}
+  powerDownClip: {fileID: 8300000, guid: 9af3820d713b88849be900ee45cc8cb1, type: 3}
+  oneUpClip: {fileID: 8300000, guid: 217b2b3cb5002124ca4515ce58e9cd55, type: 3}
+  blockBumpClip: {fileID: 8300000, guid: 41cb582774ba8684b9dcc268608640a8, type: 3}
+  blockBreakClip: {fileID: 8300000, guid: 953462c095c63924ebd5c9b21a1f3422, type: 3}
+  pipeClip: {fileID: 8300000, guid: 46767ef080379e8488b708c13d72d99a, type: 3}
+  levelCompleteClip: {fileID: 8300000, guid: f1e2d3c4b5a6978890123456789fabcd, type: 3}
+  gameOverClip: {fileID: 8300000, guid: a1b2c3d4e5f6478901234567890abcde, type: 3}
+  flagpoleClip: {fileID: 8300000, guid: 30354bbb3da31f64eb362b52aac99891, type: 3}
+  levelCompleteFollowupClip: {fileID: 0}
+  gameOverFollowupClip: {fileID: 0}
+  levelCompleteFollowupDelay: 0.75
+  gameOverFollowupDelay: 0.75
+  sfxVolume: 1
+  jumpPitchRange: {x: 0.94, y: 1.06}
+  coinPitchRange: {x: 0.92, y: 1.08}
+  buttonPitchRange: {x: 0.98, y: 1.02}
+  deathPitchRange: {x: 0.98, y: 1.02}
+  globalPitchMultiplier: 1
+--- !u!114 &1766498296086722940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493739171126318096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d105acece70934e4ab0f25fbffd7d055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  mainMenuBuildIndex: 0
+  mainMenuGroup: {fileID: 0}
+  levelSelectGroup: {fileID: 0}
+  settingsGroup: {fileID: 0}
+  hudGroup: {fileID: 0}
+  gameOverGroup: {fileID: 0}
+  levelCompleteGroup: {fileID: 0}
+  winGroup: {fileID: 0}
+  fadeGroup: {fileID: 0}
+  pauseGroup: {fileID: 0}
+  musicVolumeSlider: {fileID: 0}
+  sfxVolumeSlider: {fileID: 0}
+  settingsDeveloperText: {fileID: 0}
+  scoreText: {fileID: 0}
+  livesText: {fileID: 0}
+  coinText: {fileID: 0}
+  timerText: {fileID: 0}
+  pauseButtonObject: {fileID: 0}
+  pauseButtonSize: {x: 84, y: 40}
+  pauseButtonOffset: {x: -14, y: -12}
+  pauseButtonBringToFront: 1
+  floatingTextRoot: {fileID: 0}
+  floatingTextPrefab: {fileID: 0}
+  uiCamera: {fileID: 0}
+  developerCreditText: Developed by Ahmed Fahmy
+  mainMenuDeveloperText: {fileID: 0}
+  hudDeveloperText: {fileID: 0}
+  mainMenuDeveloperPosition: {x: -199.83, y: 12}
+  settingsDeveloperPosition: {x: 0, y: -190}
+  hudDeveloperPosition: {x: -20, y: 16}
+  levelCompleteText: {fileID: 0}
+  nextLevelButtonObject: {fileID: 0}
+  mainMenuButtonObject: {fileID: 0}
+  winScoreText: {fileID: 0}
+  winCoinsText: {fileID: 0}
+  gameOverText: {fileID: 0}
+  retryButtonObject: {fileID: 0}
+  gameOverMenuButtonObject: {fileID: 0}
+  level1ButtonObject: {fileID: 0}
+  level2ButtonObject: {fileID: 0}
+  level3ButtonObject: {fileID: 0}
+  level1InfoText: {fileID: 0}
+  level2InfoText: {fileID: 0}
+  level3InfoText: {fileID: 0}
+  runtimePanelTitle: CHOOSE LEVEL
+  runtimePanelBackgroundColor: {r: 0.03, g: 0.08, b: 0.15, a: 0.86}
+  runtimeButtonSize: {x: 280, y: 60}
+  runtimeLevelButtonsStartY: 80
+  runtimeLevelButtonsSpacing: 80
+  runtimeBackButtonY: -170
+  runtimeLevel1Label: Level 1
+  runtimeLevel2Label: Level 2
+  runtimeLevel3Label: Level 3
+  runtimeBackLabel: Back
+  runtimeLevel1Icon: L1
+  runtimeLevel2Icon: L2
+  runtimeLevel3Icon: L3
+  runtimeBackIcon: <
+  runtimeLevel1Color: {r: 0.11, g: 0.36, b: 0.67, a: 0.98}
+  runtimeLevel2Color: {r: 0.1, g: 0.46, b: 0.59, a: 0.98}
+  runtimeLevel3Color: {r: 0.14, g: 0.55, b: 0.48, a: 0.98}
+  runtimeBackColor: {r: 0.28, g: 0.31, b: 0.36, a: 0.95}
+  useHudLabelFormat: 0
+  autoStyleHudText: 1
+  hudScoreFontSize: 22
+  hudSmallFontSize: 20
+  hudPrimaryTextColor: {r: 0.95, g: 0.97, b: 1, a: 1}
+  hudAccentTextColor: {r: 1, g: 0.84, b: 0.34, a: 1}
+  timerNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  timerWarningColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &3802282396875524419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493739171126318096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23ad3d2d31b20943821f4a082693256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameDataBootstrap
+  gameDataJson: {fileID: 4900000, guid: 152687187d23d7f479ae1710fa6b4ea5, type: 3}
